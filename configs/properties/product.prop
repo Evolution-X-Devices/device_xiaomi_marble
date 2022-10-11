@@ -8,6 +8,11 @@ media.stagefright.audio.deep=false
 ro.sf.blurs_are_expensive=1
 ro.surface_flinger.supports_background_blur=1
 
+# Enable debugging
+persist.sys.usb.config=mtp,adb
+ro.adb.secure=0
+ro.debuggable=1
+
 # Radio
 persist.vendor.radio.hidl_dev_service=true
 ro.vendor.radio.5g=3
