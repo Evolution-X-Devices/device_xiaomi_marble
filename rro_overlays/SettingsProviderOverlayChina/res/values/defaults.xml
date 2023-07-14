@@ -17,6 +17,9 @@
  */
 -->
 <resources>
+    <!-- Default for Settings.Global.DEVICE_NAME $1=MANUFACTURER $2=MODEL-->
+    <string translatable="false" name="def_device_name">Xiaomi Redmi Note 12 Turbo</string>
+
     <!-- Default for Settings.Global.DEVICE_NAME $1=MODEL-->
-    <string name="def_device_name_simple">Redmi Note 12 Turbo</string>
+    <string translatable="false" name="def_device_name_simple">Redmi Note 12 Turbo</string>
 </resources>
