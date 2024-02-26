@@ -11,6 +11,9 @@ ro.surface_flinger.supports_background_blur=1
 # Cutout
 ro.support_hide_display_cutout=true
 
+# FUSE passthrough
+persist.sys.fuse.passthrough.enable=true
+
 # Phantom process monitoring
 sys.fflag.override.settings_enable_monitor_phantom_procs=false
 
