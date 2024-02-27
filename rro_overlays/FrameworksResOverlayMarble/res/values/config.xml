@@ -754,4 +754,7 @@
 
     <!-- The default vibration strength, must be between 1 and 255 inclusive. -->
     <integer name="config_defaultVibrationAmplitude">128</integer>
+
+    <!-- The max scale for the wallpaper when it's zoomed in -->
+    <item name="config_wallpaperMaxScale" format="float" type="dimen">1</item>
 </resources>
