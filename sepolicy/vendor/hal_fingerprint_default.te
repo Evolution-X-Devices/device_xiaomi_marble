@@ -46,7 +46,6 @@ allow hal_fingerprint_default vendor_hal_perf_default:binder call;
 
 # Props
 set_prop(hal_fingerprint_default, vendor_fingerprint_prop)
-get_prop(system_server, vendor_fingerprint_prop);
 
 allow hal_fingerprint_default sysfs:file  { write };
 allow hal_fingerprint_default rootfs:dir { read };
