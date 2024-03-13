@@ -21,7 +21,7 @@ get_prop(platform_app, vendor_camera_sensor_prop)
 get_prop(platform_app, vendor_displayfeature_prop)
 get_prop(platform_app, vendor_panel_info_prop)
 get_prop(platform_app, vendor_camera_prop)
-get_prop(platform_app, vendor_fp_prop)
+get_prop(platform_app, vendor_fingerprint_prop)
 
 # Allow Dirac App to read Dirac properties
 get_prop(platform_app, vendor_audio_prop)

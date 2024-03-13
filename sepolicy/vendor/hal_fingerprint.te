@@ -22,5 +22,5 @@ allow hal_fingerprint_default vendor_xdsp_device:file r_file_perms;
 
 get_prop(hal_fingerprint_default, vendor_adsprpc_prop)
 get_prop(hal_fingerprint_default, vendor_panel_info_prop)
-set_prop(hal_fingerprint_default, vendor_fp_prop)
+set_prop(hal_fingerprint_default, vendor_fingerprint_prop)
 set_prop(hal_fingerprint_default, vendor_fp_info_prop)

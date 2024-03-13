@@ -16,7 +16,7 @@ allow hal_mfidoca_default vendor_dmabuf_qseecom_heap_device:chr_file { ioctl ope
 allow hal_mfidoca_default vendor_dmabuf_qseecom_ta_heap_device:chr_file { ioctl open read };
 allow hal_mfidoca_default hal_mtdservice_default:binder transfer;
 init_daemon_domain(hal_mfidoca_default)
-get_prop(hal_mfidoca_default, vendor_fp_prop)
+get_prop(hal_mfidoca_default, vendor_fingerprint_prop)
 get_prop(hal_mfidoca_default, vendor_system_prop)
 set_prop(hal_mfidoca_default, vendor_mlipay_prop);
 set_prop(hal_mfidoca_default, vendor_payment_security_prop)

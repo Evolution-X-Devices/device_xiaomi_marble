@@ -17,7 +17,7 @@ vendor_internal_prop(vendor_ctl_vendor_display_prop)
 
 # Fingerprint
 vendor_restricted_prop(vendor_fp_info_prop)
-vendor_public_prop(vendor_fp_prop)
+vendor_public_prop(vendor_fingerprint_prop)
 
 # GNSS
 vendor_public_prop(vendor_edgnss_qxwz_downloadak_prop)

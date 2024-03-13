@@ -5,7 +5,7 @@ allow init hal_fingerprint_default:process { ptrace };
 allow vendor_init vendor_ddr_prop:property_service set;
 allow vendor_init cgroup:file getattr;
 
-set_prop(vendor_init, vendor_fp_prop)
+set_prop(vendor_init, vendor_fingerprint_prop)
 set_prop(vendor_init, vendor_fp_info_prop)
 set_prop(vendor_init, vendor_thermal_normal_prop)
 set_prop(vendor_init, vendor_nfc_mi_prop)

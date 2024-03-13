@@ -26,7 +26,7 @@ allow hal_tidaservice_default sysfs:file { open read write };
 allow hal_tidaservice_default vendor_dmabuf_qseecom_heap_device:chr_file { ioctl open read };
 allow hal_tidaservice_default vendor_dmabuf_qseecom_ta_heap_device:chr_file { ioctl open read };
 init_daemon_domain(hal_tidaservice_default)
-get_prop(hal_tidaservice_default, vendor_fp_prop)
+get_prop(hal_tidaservice_default, vendor_fingerprint_prop)
 get_prop(hal_tidaservice_default, vendor_system_prop)
 get_prop(hal_tidaservice_default, vendor_payment_security_prop)
 hwbinder_use(hal_tidaservice_default)
