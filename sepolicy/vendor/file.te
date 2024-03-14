@@ -13,7 +13,7 @@ type public_adsprpcd_file, file_type;
 type vendor_modem_data_file, data_file_type, file_type;
 
 # Dataservice
-type vendor_hal_factory_aidlservice, data_file_type, file_type;
+type vendor_hal_factory_aidlservice, data_file_type, file_type, service_manager_type;
 
 # Display
 type vendor_sysfs_displayfeature, fs_type, sysfs_type;
