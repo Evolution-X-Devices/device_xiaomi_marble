@@ -9,8 +9,14 @@
      "remote": "bb"
    },
    {
-     "repository": "evo-x/vendor_xiaomi_camera",
-     "target_path": "vendor/xiaomi/camera",
-     "remote": "bb"
+     "repository": "Chaitanyakm/device_xiaomi_miuicamera-marble",
+     "target_path": "device/xiaomi/miuicamera-marble",
+     "branch": "fourteen"
+   },
+   {
+     "repository": "Chaitanyakm/vendor_xiaomi_miuicamera-marble",
+     "target_path": "vendor/xiaomi/miuicamera-marble",
+     "remote": "bb",
+     "branch": "fourteen"
    }
 ]
