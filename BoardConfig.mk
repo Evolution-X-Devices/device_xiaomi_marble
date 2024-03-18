@@ -167,6 +167,9 @@ BOARD_VENDOR_KERNEL_MODULES_LOAD := $(strip $(shell cat $(KERNEL_PATH)/vendor_dl
 BOARD_VENDOR_KERNEL_MODULES := $(addprefix $(KERNEL_PATH)/vendor_dlkm/, $(BOARD_VENDOR_KERNEL_MODULES_LOAD))
 BOARD_VENDOR_KERNEL_MODULES_BLOCKLIST_FILE :=  $(KERNEL_PATH)/vendor_dlkm/modules.blocklist
 
+# Fix prebuilt build
+$(shell mkdir -p $(OUT_DIR)/target/product/marble/obj/KERNEL_OBJ/usr)
+
 # OTA
 TARGET_OTA_ASSERT_DEVICE := marble|marblein
 
