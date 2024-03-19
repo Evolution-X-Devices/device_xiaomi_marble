@@ -19,7 +19,6 @@ package org.lineageos.settings.gestures;
 import android.os.Bundle;
 
 import com.android.settingslib.collapsingtoolbar.CollapsingToolbarBaseActivity;
-import com.android.settingslib.widget.R;
 
 public class FpDoubleTapActivity extends CollapsingToolbarBaseActivity {
 
@@ -29,7 +28,7 @@ public class FpDoubleTapActivity extends CollapsingToolbarBaseActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        getSupportFragmentManager().beginTransaction().replace(R.id.content_frame,
+        getSupportFragmentManager().beginTransaction().replace(com.android.settingslib.collapsingtoolbar.R.id.content_frame,
                 new FpDoubleTapFragment(), TAG).commit();
     }
 
