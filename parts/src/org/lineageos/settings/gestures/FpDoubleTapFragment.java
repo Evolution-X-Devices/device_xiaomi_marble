@@ -20,7 +20,8 @@ import android.os.Bundle;
 import android.os.UserHandle;
 import android.provider.Settings;
 import android.util.Log;
-import android.widget.Switch;
+import android.widget.CompoundButton;
+import android.widget.CompoundButton.OnCheckedChangeListener;
 
 import androidx.preference.ListPreference;
 import androidx.preference.Preference;
@@ -28,12 +29,11 @@ import androidx.preference.Preference.OnPreferenceChangeListener;
 import androidx.preference.PreferenceFragmentCompat;
 
 import com.android.settingslib.widget.MainSwitchPreference;
-import com.android.settingslib.widget.OnMainSwitchChangeListener;
 
 import org.lineageos.settings.R;
 
 public class FpDoubleTapFragment extends PreferenceFragmentCompat implements
-        OnPreferenceChangeListener, OnMainSwitchChangeListener {
+        OnPreferenceChangeListener, OnCheckedChangeListener {
 
     private static final String TAG = "FpDoubleTapFragment";
     private static final String PREF_ENABLE = "fp_double_tap_enable";
@@ -73,7 +73,7 @@ public class FpDoubleTapFragment extends PreferenceFragmentCompat implements
     }
 
     @Override
-    public void onSwitchChanged(Switch switchView, boolean isChecked) {
+    public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
         mActionPref.setEnabled(isChecked);
         Settings.System.putIntForUser(getActivity().getContentResolver(),
                 GestureUtils.SETTING_KEY_ENABLE, isChecked ? 1 : 0, UserHandle.USER_CURRENT);
