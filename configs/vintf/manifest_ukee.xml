@@ -85,6 +85,11 @@ SPDX-License-Identifier: BSD-3-Clause-Clear
             <instance>default</instance>
         </interface>
     </hal>
+    <hal format="hidl">
+        <name>android.hardware.health</name>
+        <transport>hwbinder</transport>
+        <fqname>@2.1::IHealth/default</fqname>
+    </hal>
     <!-- QSEECom HAL service -->
     <hal format="hidl">
         <name>vendor.qti.hardware.qseecom</name>
