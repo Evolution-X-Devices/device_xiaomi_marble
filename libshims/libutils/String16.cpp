@@ -4,7 +4,7 @@ namespace android {
 
 static const StaticString16 emptyString(u"");
 static inline char16_t* getEmptyString() {
-    return const_cast<char16_t*>(emptyString.string());
+    return const_cast<char16_t*>(emptyString.c_str());
 }
 
 // ---------------------------------------------------------------------------
