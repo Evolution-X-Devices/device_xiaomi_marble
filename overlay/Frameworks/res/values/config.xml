@@ -307,4 +307,8 @@
          @see https://www.w3.org/TR/SVG/paths.html#PathData
          -->
     <string name="config_mainBuiltInDisplayCutout" translatable="false">M 0,0 H -28 V 94 H 28 V 0 H 0 Z</string>
+
+    <!-- Whether device implements proximity sensor based checks to prevent
+         accidental unlocks when the screen is off. -->
+    <bool name="config_proximityCheckOnFpsUnlock">true</bool>
 </resources>
