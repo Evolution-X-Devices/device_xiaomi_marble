@@ -1,0 +1,46 @@
+[
+  {
+    "repository": "device_xiaomi_sm8450-common",
+    "target_path": "device/xiaomi/sm8450-common"
+  },
+  {
+    "repository": "vendor_xiaomi_sm8450-common",
+    "target_path": "vendor/xiaomi/sm8450-common"
+  },
+  {
+    "repository": "vendor_xiaomi_marble",
+    "target_path": "vendor/xiaomi/marble"
+  },
+  {
+    "repository": "Evolution-X-Devices/hardware_xiaomi",
+    "target_path": "hardware/xiaomi",
+    "branch": "bka-no-dolby",
+    "remote": "github-non-los"
+  },
+  {
+    "repository": "Evolution-X-Devices/hardware_dolby",
+    "target_path": "hardware/dolby",
+    "branch": "bka-aospa",
+    "remote": "github-non-los"
+  },
+  {
+    "repository": "device_xiaomi_miuicamera-marble",
+    "target_path": "device/xiaomi/miuicamera-marble"
+  },
+  {
+    "repository": "vendor_xiaomi_miuicamera-marble",
+    "target_path": "vendor/xiaomi/miuicamera-marble"
+  },
+  {
+    "repository": "kernel_xiaomi_sm8450",
+    "target_path": "kernel/xiaomi/sm8450"
+  },
+  {
+    "repository": "kernel_xiaomi_sm8450-devicetrees",
+    "target_path": "kernel/xiaomi/sm8450-devicetrees"
+  },
+  {
+    "repository": "kernel_xiaomi_sm8450-modules",
+    "target_path": "kernel/xiaomi/sm8450-modules"
+  }
+]

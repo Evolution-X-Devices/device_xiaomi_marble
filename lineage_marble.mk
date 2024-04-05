@@ -10,6 +10,11 @@ $(call inherit-product, device/xiaomi/marble/device.mk)
 # Inherit from common lineage configuration
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
+EVO_BUILD_TYPE := Official
+TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_BUILD_APERTURE_CAMERA := false
+
+# Device identifier. This must come after all inclusions
 PRODUCT_NAME := lineage_marble
 PRODUCT_DEVICE := marble
 PRODUCT_MANUFACTURER := Xiaomi
