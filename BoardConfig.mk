@@ -18,6 +18,9 @@ DEVICE_PATH := device/xiaomi/marble
 # Assert
 TARGET_OTA_ASSERT_DEVICE := marble,marblein
 
+# Init
+TARGET_RECOVERY_DEVICE_MODULES ?= init_xiaomi_marble
+
 # Properties
 TARGET_ODM_PROP += $(DEVICE_PATH)/properties/odm.prop
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/properties/system.prop
