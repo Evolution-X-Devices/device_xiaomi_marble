@@ -311,4 +311,7 @@
     <!-- Whether device implements proximity sensor based checks to prevent
          accidental unlocks when the screen is off. -->
     <bool name="config_proximityCheckOnFpsUnlock">true</bool>
+
+    <!--Useful if you want to improve signal reception -->
+    <bool name="config_ignoreRssnrSignalLevel">true</bool>
 </resources>
