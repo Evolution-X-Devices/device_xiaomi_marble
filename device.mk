@@ -35,6 +35,7 @@ SPAMMY_LOG_TAGS := \
     SDM \
     SDM-histogram \
     SRE \
+    SensorService \
     WifiHAL \
     cnss-daemon \
     libcitsensorservice@2.0-impl \
