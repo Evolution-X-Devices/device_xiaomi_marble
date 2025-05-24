@@ -933,6 +933,8 @@ product/etc/displayconfig/display_id_4630946370515662722.xml:vendor/etc/displayc
 product/etc/displayconfig/display_id_4630946480857061762.xml:vendor/etc/displayconfig/display_id_4630946480857061761.xml
 vendor/etc/display/qdcm_calib_data_xiaomi_36_02_0a_video_mode_dsc_dsi_panel.json
 vendor/etc/display/qdcm_calib_data_xiaomi_36_0d_0b_video_mode_dsc_dsi_panel.json
+vendor/etc/mdss_dsi_m16t_36_02_0a_dsc_vid_mi.xml
+vendor/etc/mdss_dsi_m16t_36_0d_0b_dsc_vid_mi.xml
 
 # Fingerprint
 vendor/lib64/hw/fingerprint.fpc.so:vendor/lib64/hw/fingerprint.fpc.default.so;FIX_SONAME
