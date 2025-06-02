@@ -15,4 +15,6 @@ class RawLightNotifier : public SensorNotifier {
 
   protected:
     void notify();
+
+    bool isEnable;
 };
