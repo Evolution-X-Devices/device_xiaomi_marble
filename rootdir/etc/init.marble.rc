@@ -1,6 +1,7 @@
 on property:ro.boot.product.hardware.sku=marble
     enable vendor.nfc_hal_service
     enable secureelement-hal_1_2
+    enable qti_esepowermanager_service_1_1
 
 service vendor.nfc_hal_service /vendor/bin/hw/android.hardware.nfc-service.nxp
     override
@@ -14,4 +15,11 @@ service secureelement-hal_1_2 /vendor/bin/hw/vendor.qti.secure_element@1.2-servi
     class early_hal
     user system
     group system
+    disabled
+
+service qti_esepowermanager_service_1_1 /vendor/bin/hw/vendor.qti.esepowermanager@1.1-service
+    override
+    class early_hal
+    user system
+    group nfc system
     disabled
