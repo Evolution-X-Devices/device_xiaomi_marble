@@ -18,15 +18,6 @@
 
 #define GB(b) (b * 1024ull * 1024 * 1024)
 
-static const dalvik_heap_info_t dalvik_heap_info_16384 = {
-    .heapstartsize = "32m",
-    .heapgrowthlimit = "448m",
-    .heapsize = "640m",
-    .heapminfree = "16m",
-    .heapmaxfree = "64m",
-    .heaptargetutilization = "0.4",
-};
-
 static const dalvik_heap_info_t dalvik_heap_info_12288 = {
     .heapstartsize = "24m",
     .heapgrowthlimit = "384m",
@@ -51,9 +42,7 @@ void set_dalvik_heap() {
 
     sysinfo(&sys);
 
-    if (sys.totalram > GB(15))
-        dhi = &dalvik_heap_info_16384;
-    else if (sys.totalram > GB(11))
+    if (sys.totalram > GB(11))
         dhi = &dalvik_heap_info_12288;
     else
         dhi = &dalvik_heap_info_8192;
