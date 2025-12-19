@@ -42,5 +42,9 @@
   {
     "repository": "kernel_xiaomi_sm8450-modules",
     "target_path": "kernel/xiaomi/sm8450-modules"
+  },
+  {
+    "repository": "packages_apps_GameBar",
+    "target_path": "packages/apps/GameBar"
   }
 ]
