@@ -31,7 +31,7 @@ namespace {
 class RawLightSensorCallback : public IEventQueueCallback {
   public:
     Return<void> onEvent(const Event& e) {
-        _oem_msg* msg = new _oem_msg;
+        auto msg = std::make_unique<_oem_msg>();
         msg->notifyType = REPORT_VALUE;
         msg->value = e.u.vec4.y;
         msg->notifyTypeFloat = msg->notifyType;
@@ -39,7 +39,7 @@ class RawLightSensorCallback : public IEventQueueCallback {
         msg->unknown2 = 5;
         msg->sensorType = kSensorTypeAmbientlightRaw;
 
-        SscCalApiWrapper::getInstance().processMsg(msg);
+        SscCalApiWrapper::getInstance().processMsg(msg.get());
 
         return Void();
     }
