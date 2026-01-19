@@ -308,27 +308,55 @@
          -->
     <string name="config_mainBuiltInDisplayCutout" translatable="false">M 0,0 H -28 V 94 H 28 V 0 H 0 Z</string>
 
+    <!-- List of biometric sensors on the device, in decreasing strength. Consumed by AuthService
+         when registering authenticators with BiometricService. Format must be ID:Modality:Strength,
+         where: IDs are unique per device, Modality as defined in BiometricAuthenticator.java,
+         and Strength as defined in Authenticators.java -->
+    <string-array name="config_biometric_sensors" translatable="false" >
+        <!-- ID0:Fingerprint:Strong -->
+        <item>0:2:15</item>
+    </string-array>
+
+    <!-- Indicates whether device has a power button fingerprint sensor. -->
+    <bool name="config_is_powerbutton_fps">true</bool>
+
     <!-- An array of arrays of side fingerprint sensor properties relative to each display.
          Note: this value is temporary and is expected to be queried directly
          from the HAL in the future. -->
     <array name="config_sfps_sensor_props" translatable="false">
-        <item>@array/config_sfps_sensor_props_0</item>
-        <item>@array/config_sfps_sensor_props_1</item>
+        <item>@array/sfps_sensor_props_0</item>
+        <item>@array/sfps_sensor_props_1</item>
+        <item>@array/sfps_sensor_props_2</item>
+        <item>@array/sfps_sensor_props_3</item>
     </array>
 
-    <array name="config_sfps_sensor_props_0" translatable="false">
-        <item>local:4630946480857061761</item>     <!-- displayId -->
-        <item>1080</item>                          <!-- sensorLocationX -->
-        <item>920</item>                           <!-- sensorLocationY -->
-        <item>210</item>                           <!-- sensorRadius -->
-    </array>
+    <string-array name="sfps_sensor_props_0" translatable="false">
+        <item>local:4630946370515662721</item> <!-- displayId -->
+        <item>1080</item> <!-- sensorLocationX -->
+        <item>920</item>  <!-- sensorLocationY -->
+        <item>210</item>  <!-- sensorRadius -->
+    </string-array>
 
-    <array name="config_sfps_sensor_props_1" translatable="false">
-        <item>local:4630946370515662721</item>     <!-- displayId -->
-        <item>1080</item>                          <!-- sensorLocationX -->
-        <item>920</item>                           <!-- sensorLocationY -->
-        <item>210</item>                           <!-- sensorRadius -->
-    </array>
+    <string-array name="sfps_sensor_props_1" translatable="false">
+        <item>local:4630946370515662722</item> <!-- displayId -->
+        <item>1080</item> <!-- sensorLocationX -->
+        <item>920</item>  <!-- sensorLocationY -->
+        <item>210</item>  <!-- sensorRadius -->
+    </string-array>
+
+    <string-array name="sfps_sensor_props_2" translatable="false">
+        <item>local:4630946480857061761</item> <!-- displayId -->
+        <item>1080</item> <!-- sensorLocationX -->
+        <item>920</item>  <!-- sensorLocationY -->
+        <item>210</item>  <!-- sensorRadius -->
+    </string-array>
+
+    <string-array name="sfps_sensor_props_3" translatable="false">
+        <item>local:4630946480857061762</item> <!-- displayId -->
+        <item>1080</item> <!-- sensorLocationX -->
+        <item>920</item>  <!-- sensorLocationY -->
+        <item>210</item>  <!-- sensorRadius -->
+    </string-array>
 
     <!-- Whether device implements proximity sensor based checks to prevent
          accidental unlocks when the screen is off. -->
