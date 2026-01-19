@@ -28,6 +28,9 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     firmware_aw_cali.bin_symlink
 
+# Fingerprint
+TARGET_USES_MFP_DAEMON := true
+
 # Gamebar
 $(call inherit-product, packages/apps/GameBar/gamebar.mk)
 
