@@ -28,6 +28,9 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     firmware_aw_cali.bin_symlink
 
+# Fingerprint
+TARGET_USES_MFP_DAEMON := true
+
 # Light
 $(call soong_config_set,xiaomi_sm8450_sensor_notifier,extension_lib,//device/xiaomi/marble:libsensor-notifier-ext-light)
 

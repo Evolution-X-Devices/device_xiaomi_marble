@@ -23,3 +23,10 @@ service qti_esepowermanager_service_1_1 /vendor/bin/hw/vendor.qti.esepowermanage
     user system
     group nfc system
     disabled
+
+service mfp-daemon /vendor/bin/hw/mfp-daemon
+    override
+    class late_start
+    user system
+    group system drmrpc diag input uhid
+    capabilities SYS_NICE
