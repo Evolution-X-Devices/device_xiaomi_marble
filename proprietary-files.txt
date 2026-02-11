@@ -1026,7 +1026,7 @@ vendor/etc/thermal-map.conf
 vendor/etc/thermal-mgame.conf
 vendor/etc/thermal-navigation.conf
 vendor/etc/thermal-nolimits.conf
-vendor/etc/thermal-normal.conf
+vendor/etc/thermal-normal.conf|7457a08251577ed128da28e7571e097cbea20561
 vendor/etc/thermal-per-cclassvideo.conf
 vendor/etc/thermal-per-cgame.conf
 vendor/etc/thermal-per-class0.conf
@@ -1035,7 +1035,7 @@ vendor/etc/thermal-per-normal.conf
 vendor/etc/thermal-per-video.conf
 vendor/etc/thermal-phone.conf
 vendor/etc/thermal-region-map.conf
-vendor/etc/thermal-tgame.conf
+vendor/etc/thermal-tgame.conf|f9efb54ea8ae8cdb4f71523e6a5c39a3b3474dd8
 vendor/etc/thermal-video.conf
 vendor/etc/thermal-videochat.conf
 vendor/etc/thermal-yuanshen.conf
