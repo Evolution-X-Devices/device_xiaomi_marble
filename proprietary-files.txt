@@ -1049,10 +1049,21 @@ vendor/firmware/goodix_firmware_TM_Second.bin
 
 # Vibrator
 vendor/firmware/0_click_P_RTP.bin:vendor/etc/vibrator/effect_0.bin
+vendor/firmware/0_click_P_RTP.bin:vendor/etc/vibrator/primitive_effect_0.bin
+vendor/firmware/1_doubelClick_P_RTP.bin:vendor/etc/vibrator/effect_1.bin
+vendor/firmware/1_doubelClick_P_RTP.bin:vendor/etc/vibrator/primitive_effect_1.bin
 vendor/firmware/2_tick_P_RTP.bin:vendor/etc/vibrator/effect_2.bin
+vendor/firmware/2_tick_P_RTP.bin:vendor/etc/vibrator/primitive_effect_2.bin
 vendor/firmware/3_thud_P_RTP.bin:vendor/etc/vibrator/effect_3.bin
+vendor/firmware/3_thud_P_RTP.bin:vendor/etc/vibrator/primitive_effect_3.bin
 vendor/firmware/4_pop_P_RTP.bin:vendor/etc/vibrator/effect_4.bin
+vendor/firmware/4_pop_P_RTP.bin:vendor/etc/vibrator/primitive_effect_4.bin
 vendor/firmware/5_heavyClick_P_RTP.bin:vendor/etc/vibrator/effect_5.bin
+vendor/firmware/5_heavyClick_P_RTP.bin:vendor/etc/vibrator/primitive_effect_5.bin
+vendor/firmware/6_ringTone1_P_RTP.bin:vendor/etc/vibrator/primitive_effect_6.bin
+vendor/firmware/7_ringTone2_P_RTP.bin:vendor/etc/vibrator/primitive_effect_7.bin
+vendor/firmware/8_ringTone3_P_RTP.bin:vendor/etc/vibrator/primitive_effect_8.bin
+vendor/firmware/9_ringTone4_P_RTP.bin:vendor/etc/vibrator/primitive_effect_9.bin
 
 # VPU firmware
 vendor/firmware/vpu20_4v.b00
