@@ -65,6 +65,9 @@ blob_fixups: blob_fixups_user_type = {
         rb'\[%s\] openat: %s xiaomi_sysfs_fd,failed:\[fingerdown\]',
         b'[%s] openat: xiaomi_sysfs_fd,failed:[fingerdown]\x00\x00\x00',
     ),
+    'vendor/lib64/libssccalapi@2.0.so': blob_fixup()
+        .sig_replace('A0 7F 00 94', '1F 20 03 D5')
+        .sig_replace('94 7F 00 94', '1F 20 03 D5'),
     (
         'vendor/lib64/libTrueSight.so',
         'vendor/lib64/libalLDC.so',
