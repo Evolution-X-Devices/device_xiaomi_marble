@@ -62,6 +62,12 @@ RawLightNotifier::~RawLightNotifier() {
 void RawLightNotifier::notify() {
     Result res;
 
+    if (mQueue == nullptr) {
+        LOG(ERROR) << "failed to initialize sensor queue";
+        mActive = false;
+        return;
+    }
+
     android::base::unique_fd fd(open(kPanelPowerState.c_str(), O_RDONLY));
     if (fd.get() == -1) {
         PLOG(ERROR) << "failed to open " << kPanelPowerState;
