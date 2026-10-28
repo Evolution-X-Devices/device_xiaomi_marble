@@ -13,3 +13,12 @@ install_symlink {
     installed_location: "firmware/aw_cali.bin",
     symlink_target: "/mnt/vendor/persist/audio/aw_calr.bin",
 }
+
+prebuilt_etc {
+    name: "RemovePackages",
+    src: "remove_packages",
+    installable: false,
+    overrides: [
+        "Gallery", "Gallery2", "Gallery3D", "GalleryNew3D", "Glimpse", "PhotoTable",
+    ],
+}

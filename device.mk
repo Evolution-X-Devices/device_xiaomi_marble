@@ -71,6 +71,9 @@ PRODUCT_PACKAGES += \
     WifiResMarble \
     WifiResMarbleCN
 
+# Remove packages
+PRODUCT_PACKAGES += RemovePackages
+
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
