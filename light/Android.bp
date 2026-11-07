@@ -10,6 +10,8 @@ cc_library_static {
         "libutils",
         "android.frameworks.sensorservice@1.0",
     ],
+    // Kernel 6.6 display drivers don't export the Xiaomi mi_disp UAPI yet.
+    local_include_dirs: ["include"],
     header_libs: [
         "generated_kernel_headers",
         "//device/xiaomi/sm8450-common:xiaomi_sm8450_sensor_notifier_headers",
