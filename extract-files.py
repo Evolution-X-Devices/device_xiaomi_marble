@@ -25,6 +25,8 @@ namespace_imports = [
 ]
 
 blob_fixups: blob_fixups_user_type = {
+    'vendor/lib64/hw/camera.qcom.so': blob_fixup()
+        .add_needed('libcamximageformatutils_shim.so'),
     (
         'vendor/etc/camera/marble_enhance_motiontuning.xml',
         'vendor/etc/camera/marble_motiontuning.xml',
