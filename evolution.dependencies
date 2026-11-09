@@ -1,29 +1,23 @@
 [
   {
     "repository": "device_xiaomi_sm8450-common",
-    "target_path": "device/xiaomi/sm8450-common"
+    "target_path": "device/xiaomi/sm8450-common",
+    "branch": "cnb-6.6"
   },
   {
     "repository": "vendor_xiaomi_sm8450-common",
     "target_path": "vendor/xiaomi/sm8450-common",
-    "remote": "evo-gt",
-    "branch": "cnb"
+    "branch": "cnb-6.6"
   },
   {
     "repository": "vendor_xiaomi_marble",
-    "target_path": "vendor/xiaomi/marble"
+    "target_path": "vendor/xiaomi/marble",
+    "branch": "cnb-6.6"
   },
   {
-    "repository": "Evolution-X-Devices/hardware_xiaomi",
+    "repository": "hardware_xiaomi",
     "target_path": "hardware/xiaomi",
-    "remote": "github-non-los",
     "branch": "cnb-no-dolby"
-  },
-  {
-    "repository": "Evolution-X-Devices/hardware_dolby",
-    "target_path": "hardware/dolby",
-    "remote": "github-non-los",
-    "branch": "cnb"
   },
   {
     "repository": "device_xiaomi_miuicamera-marble",
@@ -35,15 +29,24 @@
   },
   {
     "repository": "kernel_xiaomi_sm8450",
-    "target_path": "kernel/xiaomi/sm8450"
+    "target_path": "kernel/platform/kernel-6.6/vendor/xiaomi/sm8450-kernel",
+    "branch": "cnb-6.6"
   },
   {
     "repository": "kernel_xiaomi_sm8450-devicetrees",
-    "target_path": "kernel/xiaomi/sm8450-devicetrees"
+    "target_path": "kernel/platform/kernel-6.6/vendor/xiaomi/sm8450-devicetrees",
+    "branch": "cnb-6.6"
   },
   {
     "repository": "kernel_xiaomi_sm8450-modules",
-    "target_path": "kernel/xiaomi/sm8450-modules"
+    "target_path": "kernel/platform/kernel-6.6/vendor/xiaomi/sm8450-modules",
+    "branch": "cnb-6.6"
+  },
+  {
+    "repository": "cupid-development/android_kernel_xiaomi_sm8450-build-6.6",
+    "target_path": "kernel/platform/kernel-6.6/vendor/xiaomi/sm8450-build",
+    "remote": "github-non-los",
+    "branch": "lineage-24.0-6.6"
   },
   {
     "repository": "kenway214/packages_apps_GameBar",
