@@ -20,6 +20,11 @@
     "branch": "cnb-no-dolby"
   },
   {
+    "repository": "hardware_dolby",
+    "target_path": "hardware/dolby",
+    "branch": "cnb-aidl"
+  },
+  {
     "repository": "device_xiaomi_miuicamera-marble",
     "target_path": "device/xiaomi/miuicamera-marble"
   },
