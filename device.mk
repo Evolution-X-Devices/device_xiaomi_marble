@@ -17,6 +17,10 @@ $(call inherit-product, vendor/xiaomi/marble/marble-vendor.mk)
 $(call inherit-product-if-exists, device/xiaomi/miuicamera-marble/device.mk)
 $(call soong_config_set,camera,package_name,com.android.camera)
 
+# Camera
+PRODUCT_COPY_FILES += \
+    frameworks/native/data/etc/android.hardware.camera.concurrent.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.concurrent.xml
+
 # Init
 $(call soong_config_set,libinit,vendor_init_lib,//$(LOCAL_PATH):init_xiaomi_marble)
 
