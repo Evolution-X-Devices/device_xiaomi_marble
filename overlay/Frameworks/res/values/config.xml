@@ -317,14 +317,14 @@
     </array>
 
     <array name="config_sfps_sensor_props_0" translatable="false">
-        <item>local:4630946480857061761</item>     <!-- displayId -->
+        <item>local:4630946480857061762</item>     <!-- displayId -->
         <item>1080</item>                          <!-- sensorLocationX -->
         <item>920</item>                           <!-- sensorLocationY -->
         <item>210</item>                           <!-- sensorRadius -->
     </array>
 
     <array name="config_sfps_sensor_props_1" translatable="false">
-        <item>local:4630946370515662721</item>     <!-- displayId -->
+        <item>local:4630946370515662722</item>     <!-- displayId -->
         <item>1080</item>                          <!-- sensorLocationX -->
         <item>920</item>                           <!-- sensorLocationY -->
         <item>210</item>                           <!-- sensorRadius -->

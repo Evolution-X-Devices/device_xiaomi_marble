@@ -4,7 +4,7 @@ vendor.display.override_doze_mode=1
 
 # Fingerprint
 persist.vendor.fingerprint.type=side
-persist.vendor.fingerprint.sensor_location=1080|920|210|local:4630946370515662721,1080|920|210|local:4630946480857061761
+persist.vendor.fingerprint.sensor_location=1080|920|210|local:4630946370515662722,1080|920|210|local:4630946480857061762
 
 # System properties
 ro.product.property_source_order=odm,vendor,product,system_ext,system
