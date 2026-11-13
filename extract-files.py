@@ -103,6 +103,12 @@ blob_fixups: blob_fixups_user_type = {
         'vendor.qti.hardware.display.config-V2-ndk_platform.so',
         'vendor.qti.hardware.display.config-V2-ndk.so',
     ),
+    # Route camera.qcom.so's GetFormat import to the Xiaomi-aware shim
+    # (libcamximageformatutils_shim); "GetFormat" and "GetXiaomi" are the same length.
+    'vendor/lib64/hw/camera.qcom.so': blob_fixup().binary_regex_replace(
+        b'_ZN4CamX16ImageFormatUtils9GetFormatERNS_17GrallocPropertiesERNS_6FormatE',
+        b'_ZN4CamX16ImageFormatUtils9GetXiaomiERNS_17GrallocPropertiesERNS_6FormatE',
+    ),
     'vendor/lib64/libgf_hal.so': blob_fixup().binary_regex_replace(
         rb'\[%s\] openat: %s xiaomi_sysfs_fd,failed:\[fingerdown\]',
         b'[%s] openat: xiaomi_sysfs_fd,failed:[fingerdown]\x00\x00\x00',
