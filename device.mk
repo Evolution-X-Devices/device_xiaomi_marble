@@ -28,6 +28,11 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     firmware_aw_cali.bin_symlink
 
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/audio/mixer_paths_waipio_mtp.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_ukee/mixer_paths_ukee_mtp.xml \
+    $(LOCAL_PATH)/audio/resourcemanager_waipio_mtp.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_ukee/resourcemanager_ukee_mtp.xml \
+    $(LOCAL_PATH)/audio/usecaseKvManager.xml:$(TARGET_COPY_OUT_VENDOR)/etc/usecaseKvManager.xml
+
 # Gamebar
 $(call inherit-product, packages/apps/GameBar/gamebar.mk)
 
