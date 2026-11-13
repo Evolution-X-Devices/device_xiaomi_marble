@@ -6,7 +6,6 @@ vendor.display.idle_time=0
 
 # Fingerprint
 persist.vendor.fingerprint.type=side
-persist.vendor.fingerprint.sensor_location=1080|920|210|local:4630946370515662721,1080|920|210|local:4630946480857061761
 
 # System properties
 ro.product.property_source_order=odm,vendor,product,system_ext,system
