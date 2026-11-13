@@ -329,8 +329,4 @@
         <item>920</item>                           <!-- sensorLocationY -->
         <item>210</item>                           <!-- sensorRadius -->
     </array>
-
-    <!-- Whether device implements proximity sensor based checks to prevent
-         accidental unlocks when the screen is off. -->
-    <bool name="config_proximityCheckOnFpsUnlock">true</bool>
 </resources>
