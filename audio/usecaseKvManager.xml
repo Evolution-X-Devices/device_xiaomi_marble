@@ -844,6 +844,12 @@
         </devicepp>
         <!-- IN Handset MIC DevicePPs -->
         <devicepp id="PAL_DEVICE_IN_HANDSET_MIC">
+            <keys_and_values StreamType="PAL_STREAM_LOW_LATENCY,PAL_STREAM_ULTRA_LOW_LATENCY">
+                <!-- DEVICETX - HANDSETMIC -->
+                <graph_kv key="0xA3000000" value="0xA3000004"/>
+                <!-- DEVICEPP_TX - DEVICEPP_TX_AUDIO_FLUENCE_ENDFIRE -->
+                <graph_kv key="0xAD000000" value="0xAD000003"/>
+            </keys_and_values>
             <keys_and_values StreamType="PAL_STREAM_VOICE_RECOGNITION">
                 <!-- DEVICETX - HANDSETMIC -->
                 <graph_kv key="0xA3000000" value="0xA3000004"/>
@@ -1041,6 +1047,12 @@
         </devicepp>
         <!--IN Wired headset_IN DevicePPs -->
         <devicepp id="PAL_DEVICE_IN_WIRED_HEADSET">
+            <keys_and_values StreamType="PAL_STREAM_LOW_LATENCY,PAL_STREAM_ULTRA_LOW_LATENCY">
+                <!-- DEVICETX - HEADPHONE_MIC -->
+                <graph_kv key="0xA3000000" value="0xA3000003"/>
+                <!-- DEVICEPP_TX - DEVICEPP_TX_AUDIO_FLUENCE_ENDFIRE -->
+                <graph_kv key="0xAD000000" value="0xAD000003"/>
+            </keys_and_values>
             <!--
                 This device has no separate PAL_STREAM_VOICE_RECOGNITION calibration,
                 so fall back to the deep buffer values.
@@ -1066,6 +1078,12 @@
         </devicepp>
         <!-- IN USB device and USB headset DevicePPs -->
         <devicepp id="PAL_DEVICE_IN_USB_DEVICE,PAL_DEVICE_IN_USB_HEADSET">
+            <keys_and_values StreamType="PAL_STREAM_LOW_LATENCY,PAL_STREAM_ULTRA_LOW_LATENCY">
+                <!-- DEVICETX - USB_TX -->
+                <graph_kv key="0xA3000000" value="0xA3000005"/>
+                <!-- DEVICEPP_TX - DEVICEPP_TX_AUDIO_FLUENCE_ENDFIRE -->
+                <graph_kv key="0xAD000000" value="0xAD000003"/>
+            </keys_and_values>
             <!--
                 This device has no separate PAL_STREAM_VOICE_RECOGNITION calibration,
                 so fall back to the deep buffer values.
