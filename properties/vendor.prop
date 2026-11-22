@@ -1,6 +1,5 @@
 # Display
 vendor.display.idle_time=0
-vendor.display.override_doze_mode=1
 
 # Fingerprint
 persist.vendor.fingerprint.type=side
