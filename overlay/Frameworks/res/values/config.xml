@@ -173,11 +173,11 @@
          overridden in platform specific overlays -->
     <array name="config_autoBrightnessDisplayValuesNits">
         <item>3.1</item>
-        <item>3.5</item>
-        <item>3.8</item>
-        <item>16.4</item>
-        <item>26.0</item>
-        <item>34.0</item>
+        <item>4.2</item>
+        <item>6.5</item>
+        <item>13.0</item>
+        <item>21.0</item>
+        <item>29.0</item>
         <item>37.0</item>
         <item>49.0</item>
         <item>62.0</item>

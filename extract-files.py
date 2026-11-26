@@ -112,6 +112,20 @@ blob_fixups: blob_fixups_user_type = {
     'vendor/lib64/libSNPE.so': blob_fixup()
         .call(rename_snpe_cxxabi_symbols, need_tmp_dir=False)
         .add_needed('libsnpe_cxxabi_shim.so'),
+    (
+        'vendor/etc/displayconfig/display_id_4630946370515662722.xml',
+        'vendor/etc/displayconfig/display_id_4630946480857061762.xml',
+    ): blob_fixup().regex_replace(
+        r'(</highBrightnessMode>\n)(    <ambientLightHorizonLong>)',
+        r'\1'
+        r'    <screenBrightnessRampFastDecrease>0.7047244</screenBrightnessRampFastDecrease>\n'
+        r'    <screenBrightnessRampFastIncrease>0.7047244</screenBrightnessRampFastIncrease>\n'
+        r'    <screenBrightnessRampSlowDecrease>0.05</screenBrightnessRampSlowDecrease>\n'
+        r'    <screenBrightnessRampSlowIncrease>0.05</screenBrightnessRampSlowIncrease>\n'
+        r'    <screenBrightnessRampIncreaseMaxMillis>2000</screenBrightnessRampIncreaseMaxMillis>\n'
+        r'    <screenBrightnessRampDecreaseMaxMillis>3000</screenBrightnessRampDecreaseMaxMillis>\n'
+        r'\2',
+    ),
     'vendor/lib64/libssccalapi@2.0.so': blob_fixup()
         .sig_replace('A0 7F 00 94', '1F 20 03 D5')
         .sig_replace('94 7F 00 94', '1F 20 03 D5'),
